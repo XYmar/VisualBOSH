@@ -56,7 +56,7 @@
 
 
         <li>
-          <router-link to="/">
+          <router-link to="/deploy">
             <i class="icon-sitemap"></i>
             <span>部署</span>
           </router-link>

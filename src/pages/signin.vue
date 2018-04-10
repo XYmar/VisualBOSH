@@ -115,7 +115,7 @@
           }
         )
           .then(res => {
-            this.$router.replace({path: "/selectProject"});
+            this.$router.replace({path: "/main"});
             //将用户名、密码的值存入cookie中
 
             this.setCookie('username', username, expireDays);

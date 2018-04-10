@@ -5,6 +5,7 @@ import users from '@/pages/users'
 import signin from '@/pages/signin'
 import selectProject from '@/pages/selectProject'
 import cfGroups from '@/pages/CF_Groups'
+import deploy from '@/pages/deploy'
 
 /* eslint-disable */
 import Axios from 'axios'
@@ -46,11 +47,17 @@ export default new Router({
                     name: 'users',
                     component: users
                 },
-              {
-                path: '/cfgroups',
-                name: 'cfgroups',
-                component: cfGroups
-              }
+                {
+                  path: '/cfgroups',
+                  name: 'cfgroups',
+                  component: cfGroups
+                },
+                {
+                  path: '/deploy',
+                  name: 'deploy',
+                  component: deploy
+                }
+
             ]
         }
 
