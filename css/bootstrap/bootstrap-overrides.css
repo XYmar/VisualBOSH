@@ -185,8 +185,9 @@ textarea::-webkit-input-placeholder {
 }
 .navbar-inverse .navbar-inner {
 	border-radius: 0px;
+  border:none;
 	/*border-bottom: 1px solid #191e23;*/
-	border-bottom: 1px solid #399bff;
+/*	border-bottom: 1px solid #0979C3;*/
 
 /*	background: #2c3742; !* Old browsers *!
 	background: -moz-linear-gradient(top,  #2c3742 0%, #28303a 100%); !* FF3.6+ *!
@@ -196,14 +197,14 @@ textarea::-webkit-input-placeholder {
 	background: -ms-linear-gradient(top,  #2c3742 0%,#28303a 100%); !* IE10+ *!
 	background: linear-gradient(to bottom,  #2c3742 0%,#28303a 100%); !* W3C *!
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3742', endColorstr='#28303a',GradientType=0 ); !* IE6-9 *!*/
-  background: #399bff;
-  background: -moz-linear-gradient(top,  #399bff 0%, #399bff 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#399bff), color-stop(100%,#399bff)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #399bff 0%,#399bff 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #399bff 0%,#399bff 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #399bff 0%,#399bff 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #399bff 0%,#399bff 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#399bff', endColorstr='#399bff',GradientType=0 ); /* IE6-9 */
+  background: #0979C3;
+  background: -moz-linear-gradient(left,  #0979C3 0%, #0552AD 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0979C3), color-stop(100%,#0552AD)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #0979C3 0%,#0552AD 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #0979C3 0%,#0552AD 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #0979C3 0%,#0552AD 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #0979C3 0%,#0552AD 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0979C3', endColorstr='#0552AD',GradientType=0 ); /* IE6-9 */
 }
 .navbar-inverse .btn-navbar {
 	float: left;

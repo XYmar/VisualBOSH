@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	/*background-color: #f7f7f7;*/
-  background-color: #3d464d;
+  background-color: #F9F9F9;
 	position: relative;
 	margin: 0px;
 	font-size: 12px;
@@ -254,7 +254,6 @@ input.search{
 	width: 180px;
 	float: left;
 	margin: 0em;
-  padding-top: 1.2em;
 	/*padding-top: 5.8em;*/
 }
 #dashboard-menu {
@@ -366,12 +365,23 @@ input.search{
 #dashboard-menu > li:hover i{
 	opacity: 1;
 }
+#dashboard-menu > li a {
+  background-color: #fff;
+  color: #7393BC;
+  font-weight: 700;
+}
+#dashboard-menu > li .router-link-active{
+  color:#2D70D9;
+}
+/*#dashboard-menu > li .router-link-active{
+  background-color:#258CCF;
+}*/
 #dashboard-menu > li .router-link-active,
 #dashboard-menu > li > a:hover {
 	/*color: rgba(51, 69, 90, 1);*/
-  background-color: #313d4c;
-  color:#fff;
+  background-color: #DEEBF3;
 	text-decoration: none;
+  color: #2D70D9;
 }
 #dashboard-menu > li div.pointer{
   display:none;
