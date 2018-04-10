@@ -4,6 +4,7 @@ import main from '@/components/HelloWorld'
 import users from '@/pages/users'
 import signin from '@/pages/signin'
 import selectProject from '@/pages/selectProject'
+import deploy from '@/pages/deploy'
 
 /* eslint-disable */
 import Axios from 'axios'
@@ -44,6 +45,11 @@ export default new Router({
                     path: '/users',
                     name: 'users',
                     component: users
+                },
+                {
+                  path: '/deploy',
+                  name: 'deploy',
+                  component: deploy
                 }
             ]
         }
