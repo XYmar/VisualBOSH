@@ -4,7 +4,7 @@
     <div class="row-fluid login-wrapper">
       <a href="#">
               <!-- <img class="logo" src="img/logo-white.png" /> -->
-              <h1 style="color:white;">一体化运维管理平台</h1>
+              <h1 style="color:white;">可视化部署工具</h1>
       </a>
 
       <div id="your_pros" class="span4 box" style="height:374px;margin-top: 39px;background: rgba(255, 255, 255, 0.65);">
@@ -224,7 +224,7 @@
 <style scoped>
 
   .signin{
-    background-image: url('../../img/bgs/10.jpg');
+    background-image: url('../../img/bgs/9.jpg');
     height: 100%;
   }
 

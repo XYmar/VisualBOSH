@@ -4,7 +4,7 @@
     <div class="row-fluid login-wrapper">
       <a href="#" style="text-decoration:none">
         <!-- <img class="logo" src="img/logo-white.png" /> -->
-        <h1 style="color:white;">一体化运维管理平台</h1>
+        <h1 style="color:white;">可视化部署工具</h1>
       </a>
       <br/><br/>
 
@@ -167,7 +167,7 @@
 </script>
 <style scoped>
   .signin {
-    background-image: url('../../img/bgs/10.jpg');
+    background-image: url('../../img/bgs/9.jpg');
     height: 100%;
   }
 </style>
