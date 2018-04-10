@@ -120,11 +120,25 @@
 
                         <tr class="first">
                           <td>ccng</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>--</td>
+                          <td>
+                            <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+                          </td>
+                          <td>
+                            <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+                          </td>
+                          <td>
+                            <input class="span10" type="text" name="add-runDomain" placeholder="pass_Vlar"/>
+                          </td>
+                          <td>
+                            <el-switch
+                              v-model="value2"
+                              active-color="#13ce66"
+                              inactive-color="#ff4949">
+                            </el-switch>
+                          </td>
+                          <td>
+                            <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+                          </td>
 
                         </tr>
 
@@ -185,7 +199,9 @@
   export default{
     data(){
       return{
-
+        num1: 1,
+        value1: true,
+        value2: true
       }
     },created(){
 
@@ -227,7 +243,9 @@
 
     },
     methods: {
-
+      handleChange(value) {
+        console.log(value);
+      }
     },
     computed: {
 
