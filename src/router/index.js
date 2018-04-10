@@ -4,6 +4,7 @@ import main from '@/components/HelloWorld'
 import users from '@/pages/users'
 import signin from '@/pages/signin'
 import selectProject from '@/pages/selectProject'
+import cfGroups from '@/pages/CF_Groups'
 import deploy from '@/pages/deploy'
 
 /* eslint-disable */
@@ -47,10 +48,16 @@ export default new Router({
                     component: users
                 },
                 {
+                  path: '/cfgroups',
+                  name: 'cfgroups',
+                  component: cfGroups
+                },
+                {
                   path: '/deploy',
                   name: 'deploy',
                   component: deploy
                 }
+
             ]
         }
 
