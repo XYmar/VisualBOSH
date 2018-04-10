@@ -20,7 +20,7 @@
 
           <div style="float:right;">
 
-            <h4 style="color:white;font-weight:700;">一体化运维管理平台</h4>
+            <h4 style="color:white;font-weight:700;">可视化部署工具</h4>
           </div>
 
         </div>
@@ -53,104 +53,12 @@
             <span>Home</span>
           </a> -->
         </li>
-        <li>
-          <router-link to="/components">
-            <i class="icon-cogs"></i>
-            <span>组件管理</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-          <!-- <a href="chart-showcase.html">
-            <i class="icon-signal"></i>
-            <span>Charts</span>
-          </a> -->
-        </li>
-        <li>
-          <router-link to="/devices">
-            <i class="icon-laptop"></i>
-            <span>设备管理</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
 
-        <!-- <li>
-          <router-link to="/uploadtest">
-            <i class="icon-signal"></i>
-            <span>uploadtest</span>
-          </router-link>
-        </li> -->
 
         <li>
-          <router-link to="/deployplan">
+          <router-link to="/">
             <i class="icon-sitemap"></i>
-            <span>部署设计</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
-
-<!--        <li>
-          <router-link to="/deploybind">
-            <i class="icon-sitemap"></i>
-            <span>部署设计</span>
-          </router-link>
-        </li>-->
-
-        <li>
-          <router-link to="/scan">
-            <i class="icon-headphones"></i>
-            <span>在线监控</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
-
-         <li>
-          <router-link to="/newdeploy">
-            <i class="icon-magnet"></i>
             <span>部署</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
-
-        <li>
-          <router-link to="/softpackage">
-            <i class="icon-briefcase"></i>
-            <span>软件包</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
-
-        <li>
-          <router-link to="/baseline">
-            <i class="icon-tasks"></i>
-            <span>基线</span>
-          </router-link>
-          <div class="pointer">
-            <div class="arrow"></div>
-            <div class="arrow_border"></div>
-          </div>
-        </li>
-
-        <li>
-          <router-link to="/log">
-            <i class="icon-edit"></i>
-            <span>日志</span>
           </router-link>
           <div class="pointer">
             <div class="arrow"></div>
