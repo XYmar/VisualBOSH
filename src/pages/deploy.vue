@@ -26,15 +26,125 @@
             <div class="step-content">
               <div class="step-pane active" id="step1">
                 <div class="row-fluid form-wrapper">
-                  <div class="span8">
+                  <div class="container" style="margin-left: 100px;">
+                    <form class="new_user_form inline-input" id="myForm"/>
+                      <div class="span12 field-box">
+                        <label>directorUuid:</label>
+                        <input class="span4" type="text" name="add-directorUuid"/>
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>CF版本:</label>
+                        <input class="span4" type="text" name="add-version"/>
+
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>集群名称:</label>
+                        <input class="span4" type="text" name="add-CFName"/>
+
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>集群域名:</label>
+                        <input class="span4" type="text" name="add-CFDomain"/>
+
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>componentDomain:</label>
+                        <input class="span4" type="text" name="add-compDomain"/>
+
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>runningtimeDomain:</label>
+                        <input class="span4" type="text" name="add-runDomain"/>
+
+                      </div>
+
+                      <div class="span12 field-box">
+                        <label>networkId:</label>
+                        <input class="span4" type="text" name="add-networkId"/>
+
+                      </div>
+
+                    </form>
+
 
                   </div>
                 </div>
               </div>
               <div class="step-pane" id="step2">
                 <div class="row-fluid form-wrapper">
-                  <div class="span11">
+                  <div class="span10">
+                    <!-- 组件 -->
+                    <div class="row-fluid table tabletable">
+                      <table class="table table-hover" id="table_value">
+                        <thead>
+                        <tr>
+                          <th class="span4 sortable">
+                            组件名称
+                          </th>
+                          <th class="span3 sortable">
+                            <span class="line"></span>CPU核数
+                          </th>
 
+                          <th class="span3">
+                            <span class="line"></span>内存
+                          </th>
+
+                          <th class="span3">
+                            <span class="line"></span>networkId
+                          </th>
+
+                          <th class="span4">
+                            <span class="line"></span>是否超分
+                          </th>
+                          <th class="span4">
+                            <span class="line"></span>虚拟机数
+                          </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- row -->
+                        <tr class="first">
+                          <td>nats</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+
+                        </tr>
+
+                        <tr class="first">
+                          <td>ccng</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+
+                        </tr>
+
+                        <tr class="first">
+                          <td>consul</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+                          <td>--</td>
+
+                        </tr>
+
+                        <!-- row -->
+
+                        </tbody>
+                      </table>
+                      <!--<hr/>
+                      {{devices}}-->
+                    </div>
 
                   </div>
                 </div>
@@ -127,5 +237,7 @@
 
 </script>
 <style>
-
+.tabletable{
+  height: 450px;
+}
 </style>
