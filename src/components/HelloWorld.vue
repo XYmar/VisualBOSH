@@ -43,11 +43,11 @@
             <i class="icon-group"></i>
             <span>用户管理</span>
           </router-link>
-          <div class="pointer"
+        <!--  <div class="pointer"
           >
             <div class="arrow"></div>
             <div class="arrow_border"></div>
-          </div>
+          </div>-->
           <!-- <a id="index.html">
             <i class="icon-home"></i>
             <span>Home</span>
@@ -60,10 +60,16 @@
             <i class="icon-sitemap"></i>
             <span>部署</span>
           </router-link>
-          <div class="pointer">
+        <!--  <div class="pointer">
             <div class="arrow"></div>
             <div class="arrow_border"></div>
-          </div>
+          </div>-->
+        </li>
+       <li>
+          <router-link to="/cfgroups">
+            <i class="icon-book"></i>
+            <span>集群纵览</span>
+          </router-link>
         </li>
       </ul>
     </div>
