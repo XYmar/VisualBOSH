@@ -65,7 +65,6 @@
             <div class="arrow_border"></div>
           </div>
         </li>
-
       </ul>
     </div>
 
