@@ -3,7 +3,7 @@
   <div class="hello" style="height: 100%">
     <!-- navbar -->
     <!--style="height: 50px"-->
-    <div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse" style="">
       <div class="navbar-inner" style="padding-top:10px;padding-bottom:10px">
         <button type="button" class="btn btn-navbar visible-phone" id="menu-toggler">
           <span class="icon-bar"></span>
@@ -35,9 +35,9 @@
     </div>
     <!-- sidebar -->
     <!--style="background-color: #f8f8f8;top: 50px;bottom:0px"-->
-    <div id="sidebar-nav">
+    <div id="sidebar-nav" style="">
       <!--style="background-color: #f8f8f8;"-->
-      <ul id="dashboard-menu">
+      <ul id="dashboard-menu" style="height:100%;">
         <li class="active">
           <router-link to="/users">
             <i class="icon-group"></i>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- main container -->
-    <div class="content">
+    <div class="content" style="margin-top: 64px">
       <!-- 路由出口 -->
       <transition name="fade">
         <router-view></router-view>
@@ -148,6 +148,30 @@ export default {
     cursor: pointer;
     font-weight: 700;
   }
+  .hello .navbar-inverse{
+    position: fixed;
+    top:0;
+    z-index:1000;
+    width:100%;
+  }
+  #sidebar-nav {
+    position: fixed;
+    top:64px;
+    left:0;
+    height:100%;
+  }
+ @media (max-width: 767px) {
+   #sidebar-nav {
+     left: -200px;
+     position: fixed;
+   }
+   #sidebar-nav.display {
+     position: absolute;
+     left: 0;
+     top:0;
+     height: 100%;
+   }
+ }
  /* .fade-leave-to{
     transform: translate3d(30%,0,0);
   }*/
