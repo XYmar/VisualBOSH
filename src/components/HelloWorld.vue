@@ -10,7 +10,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
         <div class="brand">
           <!-- <img src="img/logo.png" /> -->
           <div style="float:left;width:30px;">
