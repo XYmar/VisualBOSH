@@ -607,7 +607,7 @@ div.el-select-dropdown.el-popper {
 		transition: left .25s ease;
 	}
 	#sidebar-nav #dashboard-menu {
-		margin-left: 10px;
+	/*	margin-left: 10px;*/
 	}
 	#sidebar-nav #dashboard-menu li a span {
 		visibility: visible;

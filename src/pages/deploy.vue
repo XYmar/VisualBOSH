@@ -3,7 +3,6 @@
   <div>
     <div class="container-fluid">
       <div id="pad-wrapper">
-
         <div class="row-fluid">
           <div class="span12">
             <div id="fuelux-wizard" class="wizard row-fluid">
@@ -66,12 +65,7 @@
                       <div class="span12 field-box">
                         <label>networkId:</label>
                         <input class="span4" type="text" name="add-networkId"/>
-
                       </div>
-
-                    </form>
-
-
                   </div>
                 </div>
               </div>
@@ -124,7 +118,7 @@
                             <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                           </td>
                           <td>
-                            <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+                            <el-input-number v-model="num2" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                           </td>
                           <td>
                             <input class="span10" type="text" name="add-runDomain" placeholder="pass_Vlar"/>
@@ -137,7 +131,7 @@
                             </el-switch>
                           </td>
                           <td>
-                            <el-input-number v-model="num1" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+                            <el-input-number v-model="num3" size="mini" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                           </td>
 
                         </tr>
@@ -200,6 +194,8 @@
     data(){
       return{
         num1: 1,
+        num2: 1,
+        num3: 1,
         value1: true,
         value2: true
       }
@@ -254,8 +250,24 @@
   }
 
 </script>
-<style>
+<style scoped>
+div.field-box{
+  margin-bottom: 15px;
+}
 .tabletable{
   height: 450px;
+}
+table thead tr th{
+  text-align: center;
+}
+table tbody td {
+  text-align: center;
+}
+div.el-input-number.el-input-number--mini {
+  width:90px;
+}
+.field-box label{
+  text-align: right;
+  padding-right: 20px;
 }
 </style>

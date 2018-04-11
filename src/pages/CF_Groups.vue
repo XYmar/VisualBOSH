@@ -1,10 +1,12 @@
 <template>
     <div>
-      <input type="button" value="新建" class="btn btn-default">
-      <div class="table-cfgroups-container">
-        <table class="table table-hover table-cfgroups">
+      <input type="button" value="新建" class="btn btn-default addnewcfgroup" @click="addNewCfGroup">
+        <div class="row-fluid form-wrapper">
+          <div class="span12"><!-- 组件 -->
+            <div class="row-fluid table tabletable">
+              <table class="table table-hover table-cfgroups" id="table_value">
           <thead>
-            <tr>
+            <tr class="fixedHead">
               <th class="span2 sortable">
                 集群名
               </th>
@@ -40,8 +42,9 @@
               待部署
             </td>
             <td>
-              <input type="button" class="btn btn-flat primary" value="详情">
-              <input type="button" class="btn btn-flat danger" value="删除">
+              <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+              <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+              <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
             </td>
           </tr>
             <tr class="first">
@@ -59,8 +62,9 @@
                 待部署
               </td>
               <td>
-                <input type="button" class="btn btn-flat primary" value="详情">
-                <input type="button" class="btn btn-flat danger" value="删除">
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
               </td>
             </tr>
             <tr class="first">
@@ -78,8 +82,9 @@
                 待部署
               </td>
               <td>
-                <input type="button" class="btn btn-flat primary" value="详情">
-                <input type="button" class="btn btn-flat danger" value="删除">
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
               </td>
             </tr>
             <tr class="first">
@@ -97,8 +102,9 @@
                 待部署
               </td>
               <td>
-                <input type="button" class="btn btn-flat primary" value="详情">
-                <input type="button" class="btn btn-flat danger" value="删除">
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
               </td>
             </tr>
             <tr class="first">
@@ -116,39 +122,192 @@
                 待部署
               </td>
               <td>
-                <input type="button" class="btn btn-flat primary" value="详情">
-                <input type="button" class="btn btn-flat danger" value="删除">
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
               </td>
             </tr>
-
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
+            <tr class="first">
+              <td style="display:none"></td>
+              <td>
+                abc
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                2018-04-10 15:07:08
+              </td>
+              <td>
+                待部署
+              </td>
+              <td>
+                <!--<input type="button" class="btn btn-flat primary" value="详情" @click="cfGroupsDetail">-->
+                <span><i class="icon icon-pencil" @click="showCfGroupsDetail"></i></span>
+                <span><i class="icon el-icon-close" @click="removeCfItem"></i></span>
+              </td>
+            </tr>
           </tbody>
         </table>
-      </div>
-
+            </div>
+          </div>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-      name: 'c-f_-groups'
+      name: 'c-f_-groups',
+      methods: {
+        showCfGroupsDetail: function () {
+          this.$router.push('/cfGroupsDetail')
+        },
+        removeCfItem: function () {
+          var msg = '您确定删除吗？'
+          if (confirm(msg) === true) {
+          }
+        },
+        addNewCfGroup: function () {
+          this.$router.push('/deploy')
+        }
+      }
     }
 </script>
 
 <style scoped>
-  div.table-cfgroups-container{
-    margin-top:20px;
-    padding:0 10px 0 4px;
+  .addnewcfgroup {
+    background: #56AD56;
+    color:#fff;
+    width:80px;
+    margin: 10px 0 0 10px;
+  }
+  div.row-fluid.table.tabletable{
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .table-cfgroups thead{
-    background: #888;
+    /*background: #888;*/
     text-align: center;
   }
   .table-cfgroups thead tr th{
     height:20px;
-    padding:4px 10px;
+    padding:4px 0;
     text-align: center;
   }
   .table-cfgroups tbody td{
     text-align: center;
+  }
+  .icon{
+    font-size: 18px;
+    padding: 0 2px;
+    cursor: pointer;
+  }
+  .icon-pencil{
+    color:#A5C4D6;
+  }
+  .el-icon-close{
+    color:#AA2735;
+  }
+  .fixedHead{
   }
 </style>
